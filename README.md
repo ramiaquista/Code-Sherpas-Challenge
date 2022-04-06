@@ -1,24 +1,35 @@
-# README
+## Customer relationship management API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Code Sherpas Backend Challenge, In this phase we will ask you to build a web application. The objective is to create a HTTP API to manage customer data for a small shop. It will work as the backend for a CRM graphical interface that is being developed by a different team. As a developer of the backend project, you will be in charge of the API design and implementation. API must have the following capabilities:
 
-Things you may want to cover:
+## Built With
 
-* Ruby version
+Ruby >= 3.0.0
 
-* System dependencies
+Rails >= 7.0.0
 
-* Configuration
+## Getting Started
 
-* Database creation
+- To get a local copy of the repository please run the following commands on your terminal:
+   ```
+   git clone https://github.com/ramiaquista/Code-Sherpas-Challenge
+   ```
+- Go to the cloned directory with `cd Code-Sherpas-Challenge`
+- After installing everything, you can run now the API Website with `rails s`
 
-* Database initialization
+## Features
 
-* How to run the test suite
+### In this application you can:
+- Create a new customer. A customer must have the following attributes: name, surname, email and birthdate. ( # API ENDPOINT /customer?name=:name&surname=:surname&email=:email&birthdate=:birthdate )
+- Get a single customer with all the attributes mentioned above. (  # API ENDPOINT /customer/:id )
+- Get all customers. For each customer, the same information must be obtained as in the previous point. ( # API ENDPOINT /customers )
+- Update all the attributes (at once) of an existing customer mentioned above. ( # API ENDPOINT /customer/:id?name=:name&surname=:surname&email=:email&birthdate=:birthdate )
+- Delete an existing customer. (  # API ENDPOINT /customer/:id )
+## Author 
 
-* Services (job queues, cache servers, search engines, etc.)
+👤 **Ramiro Aquistapace**
 
-* Deployment instructions
+- GitHub: [@ramiaquista](https://github.com/ramiaquista)
+- Twitter: [@ramiaq1](https://twitter.com/ramiaq1)
+- LinkedIn: [RamiroAquistapace](https://www.linkedin.com/in/ramiro-aquistapace-32b61b204/)
 
-* ...
