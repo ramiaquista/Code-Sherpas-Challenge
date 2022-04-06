@@ -8,15 +8,16 @@ Ruby >= 3.0.0
 
 Rails >= 7.0.0
 
+## Live Server
+
+- Try out the application here: [Customers-API](https://customers-api-challenge.herokuapp.com/)
+
 ## Getting Started
 
 - To get a local copy of the repository please run the following commands on your terminal:
    ```
    git clone https://github.com/ramiaquista/Code-Sherpas-Challenge
    ```
-- Go to the cloned directory with `cd Code-Sherpas-Challenge`
-- After installing everything, you can run now the API Website with `rails s`
-
 ## Features
 
 ### In this application you can:
