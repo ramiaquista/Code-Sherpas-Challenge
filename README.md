@@ -8,6 +8,8 @@ Ruby >= 3.0.0
 
 Rails >= 7.0.0
 
+Docker
+
 ## Live Server
 
 - Try out the application here: [Customers-API](https://customers-api-challenge.herokuapp.com/)
