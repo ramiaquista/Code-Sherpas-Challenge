@@ -1,5 +1,4 @@
 class CustomersController < ApplicationController
-
   # API ENDPOINT /customers TO GET ALL CUSTOMERS WITH THEIR DATA.
   def index
     @customers = Customer.all
@@ -14,7 +13,8 @@ class CustomersController < ApplicationController
 
   # API ENDPOINT /customer?name=:name&surname=:surname&email=:email&birthdate=:birthdate TO CREATE A NEW CUSTOMER.
   def create
-    @customer = Customer.new(name: params[:name], surname: params[:surname], email: params[:email], birthdate: params[:birthdate])
+    @customer = Customer.new(name: params[:name], surname: params[:surname], email: params[:email],
+                             birthdate: params[:birthdate])
     if @customer.save
       render json: @customer
     else
@@ -25,7 +25,8 @@ class CustomersController < ApplicationController
   # API ENDPOINT /customer/:id?name=:name&surname=:surname&email=:email&birthdate=:birthdate TO UPDATE A CUSTOMER.
   def update
     @customer = Customer.find(params[:id])
-    if @customer.update(name: params[:name], surname: params[:surname], email: params[:email], birthdate: params[:birthdate])
+    if @customer.update(name: params[:name], surname: params[:surname], email: params[:email],
+                        birthdate: params[:birthdate])
       render json: @customer
     else
       render json: @customer.errors, status: :unprocessable_entity
@@ -38,6 +39,4 @@ class CustomersController < ApplicationController
     @customer.destroy
     render json: "#{@customer.name} has been deleted!"
   end
-
-
 end
