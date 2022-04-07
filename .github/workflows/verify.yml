@@ -62,6 +62,7 @@ jobs:
         run:
           cp config/database.yml.github-actions config/database.yml
           bundle exec rake db:create
+          bundle exec rake :schema:load
         env:
           RAILS_ENV: test
           POSTGRES_USER: postgres
